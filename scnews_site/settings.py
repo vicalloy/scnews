@@ -1,4 +1,4 @@
-# Django settings for scnews_sites project.
+# Django settings for scnews_site project.
 
 import os
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -116,7 +116,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.request",
 )
 
-ROOT_URLCONF = 'scnews_sites.urls'
+ROOT_URLCONF = 'urls'
 
 TEMPLATE_DIRS = (
     os.path.join(HERE, 'templates'),
