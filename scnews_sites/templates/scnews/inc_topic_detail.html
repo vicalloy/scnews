@@ -1,0 +1,19 @@
+{% load i18n %}
+<div class="cell">
+    <table width="100%" cellspacing="0" cellpadding="0" border="0"><tbody><tr>
+                <td valign="top" style="padding-left: 12px">
+                    <div class="sep3"></div>
+                    <span style="color:#636A86" class="bigger">
+                        <a target="_blank" href="{{ t.link }}">{{t.title}}</a>
+                    </span>
+                    <div class="sep5"></div>
+                    <span class="created">
+                        <strong><a class="node" target="_blank" href="{{ t.res.site_url }}">{{t.res.name}}</a></strong> &bull;
+                        <strong>{{t.author}}</strong> &bull;
+                        {{ t.date|timesince }}
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

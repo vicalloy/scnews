@@ -1,0 +1,28 @@
+{% extends 'scnews/base.html' %}
+
+{% block content %}
+    {% include 'scnews/inc_header.html' %}
+
+    <div id="Wrapper">
+        <div id="Main">
+            <div id="Sidebar">
+            </div>
+
+            <div id="Rightbar">
+                {% block content_right_bar%}
+                {% endblock %}
+            </div>
+
+            <div id="Content">
+                {% block content_content %}
+                {% endblock %}
+            </div>
+
+            <div class="c">
+            </div>
+        </div>
+    </div>
+
+    {% include 'scnews/plugins/inc_footer.html'%}
+
+{% endblock %}
