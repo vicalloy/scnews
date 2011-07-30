@@ -12,7 +12,8 @@ class Command(NoArgsCommand):
     def handle_noargs(self, **options):
         reses = Resource.objects.all()
         for res in reses:
-            t = datetime.now() - res.updated_on
-            if res.updated_on and (t.seconds + t.days * 3600 * 24)< res.interval:
-                continue
+            if res.updated_on:
+                t = datetime.now() - res.updated_on
+                if (t.seconds + t.days * 3600 * 24)< res.interval:
+                    continue
             fetch(res)
