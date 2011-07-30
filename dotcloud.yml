@@ -1,0 +1,5 @@
+www:
+  approot: sites
+  type: python
+data:
+  type: mysql
