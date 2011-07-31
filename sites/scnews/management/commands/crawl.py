@@ -4,7 +4,7 @@ from django.core.management.base import NoArgsCommand
 
 from scnews.models import Resource
 
-from crawl_helper import fetch
+from scnews.management.crawl_helper import fetch
 
 class Command(NoArgsCommand):
     help = "do crawl"
