@@ -41,7 +41,7 @@ def __fetch_rss(res):
                 date = date,
                 )
         t.save()
-    res.feed_updated = __fmt_rss_date(d.feed.updated_parsed)
+    #res.feed_updated = __fmt_rss_date(d.feed.updated_parsed)
 
 def fetch(res):
     if res.type == 'rss':
