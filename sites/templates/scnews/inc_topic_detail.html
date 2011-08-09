@@ -12,6 +12,12 @@
                         <strong>{{t.author}}</strong> &bull;
                         {{ t.date|timesince }}
                     </span>
+					{% if request.GET.detail %}
+                    <div class="sep5"></div>
+                    <div class="content">
+						{{t.descn|safe}}
+					</div>
+					{% endif %}
                 </td>
             </tr>
         </tbody>

@@ -14,9 +14,9 @@
 {% block content_content %}
     <div class="box" id="topics_index">
         <div class="cell" align="left">
-            <div class="fr"><span style="font-size: 110%;" class="fade"></span></div>
-            <span class="bigger">Welcome to <strong>二手数码控</strong></span>
-            <div class="sep10"></div>
+			<a href="{% url scnews_index %}">精简模式</a>
+			|
+			<a href="{% url scnews_index %}?detail=1">摘要模式</a>
         </div>
 
         {% load pagination_tags %}
