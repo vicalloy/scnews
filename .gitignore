@@ -4,10 +4,8 @@
 *~
 *.qm
 *.log
-*.txt
 *.cfg
 *.bak
 *.out
 *.swp
 logs/*
-
